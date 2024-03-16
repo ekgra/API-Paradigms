@@ -3,6 +3,7 @@ A comparison of various API Paradigms using a simple CRUD example
 - REST
 
 - GraphQL
+  
   Env 
 
     python=3.9
@@ -18,7 +19,7 @@ A comparison of various API Paradigms using a simple CRUD example
     {"query": "{ people { Id firstName lastName } }"}
 
   Mutation
-  
+
     mutation {
     createPerson( firstName: "Jane", lastName: "Doe", isAlive: false, age: 30, address: "unknown", phoneNumbers: ["unknown"], children: ["none"], spouse: "none" ) {
         firstName
