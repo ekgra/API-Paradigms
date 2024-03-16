@@ -1,14 +1,3 @@
-# pip install Flask-GraphQL
-# pip install graphene=2.1.9
-# Flask-GraphQL       2.0.1
-# graphene            2.1.5
-# graphql-core        2.3.2
-# graphql-relay       0.4.5
-# graphql-server-core 1.2.0
-
-# http://localhost:8002/graphql
-# {"query": "{ people { Id firstName lastName } }"}
-
 from flask import Flask
 from graphene import ObjectType, String, Int, List, Schema, Field, Mutation, Boolean
 from flask_graphql import GraphQLView
