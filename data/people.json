@@ -1,0 +1,76 @@
+[{
+    "_id": 0,
+    "firstName": "John",
+    "lastName": "Smith",
+    "isAlive": true,
+    "age": 27,
+    "address": {
+      "streetAddress": "21 2nd Street",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10021-3100"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "212 555-1234"
+      },
+      {
+        "type": "office",
+        "number": "646 555-4567"
+      }
+    ],
+    "children": ["Catherine", "Thomas", "Trevor"],
+    "spouse": null
+  },
+  {
+    "_id": 1,
+    "firstName": "Albert",
+    "lastName": "Einstien",
+    "isAlive": false,
+    "age": 100,
+    "address": {
+      "streetAddress": "some street",
+      "city": "Berlin",
+      "state": "Germany",
+      "postalCode": "10021-3100"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "999 999-999"
+      },
+      {
+        "type": "office",
+        "number": "646 555-4567"
+      }
+    ],
+    "children": null,
+    "spouse": "cousin"
+  },
+  {
+    "_id": 3,
+    "firstName": "John",
+    "lastName": "Page",
+    "isAlive": true,
+    "age": 50,
+    "address": {
+      "streetAddress": "some street",
+      "city": "someCity",
+      "state": "Scotland",
+      "postalCode": "10021-3100"
+    },
+    "phoneNumbers": [
+      {
+        "type": "home",
+        "number": "999 999-999"
+      },
+      {
+        "type": "office",
+        "number": "646 555-4567"
+      }
+    ],
+    "children": null,
+    "spouse": "Jane"
+  }
+]
