@@ -6,9 +6,9 @@ A comparison of various API Paradigms using a simple CRUD example
   
   Env 
 
-    python=3.9
-    pip install Flask-GraphQL
-    pip install graphene=2.1.9
+    `python=3.9`
+    `pip install Flask-GraphQL`
+    `pip install graphene=2.1.9`
  
  GraphiQL Interface
 
@@ -35,8 +35,8 @@ A comparison of various API Paradigms using a simple CRUD example
 
 - grpc
 
-    pip install grpcio-tools
-    python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. ./people.proto
+    `pip install grpcio-tools`
+    `python -m grpc_tools.protoc -I . --python_out=. --grpc_python_out=. ./people.proto`
 
-    python grpcServer.py
-    python grpcClient.py
+    `python grpcServer.py`
+    `python grpcClient.py`
