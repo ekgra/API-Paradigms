@@ -51,7 +51,7 @@
   {
     "_id": 3,
     "firstName": "John",
-    "lastName": "Page",
+    "lastName": "Doe",
     "isAlive": true,
     "age": 50,
     "address": {
