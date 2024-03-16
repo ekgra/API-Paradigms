@@ -4,7 +4,7 @@ A comparison of various API Paradigms using a simple CRUD example
 
 - GraphQL
   
-  Env 
+    Env 
 
     ```
     python=3.9`
@@ -12,16 +12,21 @@ A comparison of various API Paradigms using a simple CRUD example
     pip install graphene=2.1.9
     ```
  
- GraphiQL Interface
+    GraphiQL Interface
 
+    ```
     http://localhost:8002/graphql
+    ```
 
-  Query
+    Query
 
+    ```
     {"query": "{ people { Id firstName lastName } }"}
+    ```
 
-  Mutation
+    Mutation
 
+    ```
     mutation {
     createPerson( firstName: "Jane", lastName: "Doe", isAlive: false, age: 30, address: "unknown", phoneNumbers: ["unknown"], children: ["none"], spouse: "none" ) {
         firstName
@@ -34,6 +39,7 @@ A comparison of various API Paradigms using a simple CRUD example
         spouse
     }
     }
+    ```
 
 - grpc
 
