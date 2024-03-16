@@ -1,13 +1,13 @@
 A comparison of various API Paradigms using a simple CRUD example
 
-- REST
+- # REST
 
-- GraphQL
+- # GraphQL
   
     Env 
 
     ```
-    python=3.9`
+    python=3.9
     pip install Flask-GraphQL
     pip install graphene=2.1.9
     ```
@@ -41,7 +41,7 @@ A comparison of various API Paradigms using a simple CRUD example
     }
     ```
 
-- grpc
+- # grpc
 
     ```
     pip install grpcio-tools
