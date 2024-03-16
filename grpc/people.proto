@@ -1,0 +1,67 @@
+syntax = "proto3";
+
+message Person {
+  int32 id = 1;
+  string firstName = 2;
+  string lastName = 3;
+  bool isAlive = 4;
+  int32 age = 5;
+  Address address = 6;
+  repeated PhoneNumber phoneNumbers = 7;
+  repeated string children = 8;
+  string spouse = 9;
+}
+
+message Address {
+  string streetAddress = 1;
+  string city = 2;
+  string state = 3;
+  string postalCode = 4;
+}
+
+message PhoneNumber {
+  string type = 1;
+  string number = 2;
+}
+
+service PeopleService {
+  rpc GetPeople(GetPeopleRequest) returns (GetPeopleResponse);
+  rpc GetPerson(GetPersonRequest) returns (Person);
+  rpc AddPerson(AddPersonRequest) returns (AddPersonResponse);
+  rpc UpdatePerson(UpdatePersonRequest) returns (UpdatePersonResponse);
+  rpc DeletePerson(DeletePersonRequest) returns (DeletePersonResponse);
+}
+
+message GetPeopleRequest {}
+message GetPeopleResponse {
+  repeated Person people = 1;
+}
+
+message GetPersonRequest {
+  int32 id = 1;
+}
+
+message AddPersonRequest {
+  Person person = 1;
+}
+
+message AddPersonResponse {
+  string message = 1;
+}
+
+message UpdatePersonRequest {
+  int32 id = 1;
+  Person person = 2;
+}
+
+message UpdatePersonResponse {
+  string message = 1;
+}
+
+message DeletePersonRequest {
+  int32 id = 1;
+}
+
+message DeletePersonResponse {
+  string message = 1;
+}
